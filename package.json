@@ -8,15 +8,15 @@
   ],
   "main": "src/index.js",
   "dependencies": {
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-router-dom": "5.1.2",
-    "react-scripts": "3.0.1",
-    "axios": "1.7.9",
-    "react-syntax-highlighter": "15.6.1"
+    "axios": "^1.7.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.5",
+    "react-scripts": "^5.0.1",
+    "react-syntax-highlighter": "^15.6.1"
   },
   "devDependencies": {
-    "tailwindcss": "1.0.4"
+    "tailwindcss": "^4.0.3"
   },
   "scripts": {
     "autoprefixer": "9.6.0",
