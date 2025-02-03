@@ -3,6 +3,13 @@ import React, { useState } from "react";
 const languages = ["Java", "Python", "JavaScript", "C++"];
 
 const problemsByDifficulty = {
+  beginner: [
+    "Sum of Two Numbers",
+    "Factorial of a Number (Recursion)",
+    "Reverse a String",
+    "Find Maximum in an Array",
+    "Fibonacci Sequence",
+  ],
   easy: [
     "Two Sum",
     "Palindrome Number",
@@ -19,6 +26,17 @@ const problemsByDifficulty = {
     "Path Sum",
     "Single Number",
     "Linked List Cycle",
+    "Remove Duplicates from Sorted Array",
+    "Implement strStr()",
+    "Divide Two Integers",
+    "Valid Palindrome",
+    "Merge Sorted Array",
+    "Convert Sorted Array to BST",
+    "Pascal's Triangle II",
+    "Contains Duplicate",
+    "Min Stack",
+    "Reverse Linked List",
+    "Intersection of Two Linked Lists",
   ],
   medium: [
     "Add Two Numbers",
@@ -44,6 +62,40 @@ const problemsByDifficulty = {
     "Populating Next Right Pointers in Each Node",
     "Clone Graph",
     "Word Ladder",
+    "Remove Nth Node From End of List",
+    "Next Permutation",
+    "Combination Sum",
+    "Trapping Rain Water",
+    "Permutations",
+    "Rotate Image",
+    "Group Anagrams",
+    "Pow(x, n)",
+    "Spiral Matrix",
+    "Jump Game",
+    "Search a 2D Matrix",
+    "Minimum Path Sum",
+    "Sort List",
+    "Reverse Linked List II",
+    "Restore IP Addresses",
+    "Binary Tree Inorder Traversal",
+    "Same Tree",
+    "Binary Tree Right Side View",
+    "Number of Islands",
+    "Course Schedule",
+    "Kth Largest Element in an Array",
+    "Word Search",
+    "Count Primes",
+    "Product of Array Except Self",
+    "Validate Binary Search Tree",
+    "Flatten Binary Tree to Linked List",
+    "Minimum Size Subarray Sum",
+    "Word Break",
+    "Largest Number",
+    "Evaluate Reverse Polish Notation",
+    "Reverse Words in a String",
+    "Maximum Product Subarray",
+    "Find Minimum in Rotated Sorted Array",
+    "Bitwise AND of Numbers Range",
   ],
   hard: [
     "Median of Two Sorted Arrays",
@@ -62,6 +114,27 @@ const problemsByDifficulty = {
     "Best Time to Buy and Sell Stock III",
     "Longest Consecutive Sequence",
     "Word Break II",
+    "Valid Number",
+    "Text Justification",
+    "Edit Distance",
+    "Minimum Window Substring",
+    "Alien Dictionary",
+    "Integer to English Words",
+    "Basic Calculator",
+    "Sliding Window Maximum",
+    "Serialize and Deserialize Binary Tree",
+    "Palindrome Pairs",
+    "House Robber III",
+    "Russian Doll Envelopes",
+    "Burst Balloons",
+    "Design Twitter",
+    "Expression Add Operators",
+    "Count of Range Sum",
+    "Rearrange String k Distance Apart",
+    "Peeking Iterator",
+    "Find Median from Data Stream",
+    "Binary Tree Longest Consecutive Sequence",
+    "Count of Smaller Numbers After Self",
   ],
 };
 
@@ -100,6 +173,7 @@ const ProblemSelector = ({ onProblemSelect }) => {
           onChange={(e) => setDifficulty(e.target.value)}
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300"
         >
+          <option value="beginner">Beginner</option>
           <option value="easy">Easy</option>
           <option value="medium">Medium</option>
           <option value="hard">Hard</option>

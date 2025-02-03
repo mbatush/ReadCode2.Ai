@@ -2,12 +2,13 @@ import React, { useState } from "react";
 
 const ExplanationInput = ({ onSubmit }) => {
   const [explanation, setExplanation] = useState("");
-  const [complexity, setComplexity] = useState("O(n)"); // Default selection
+  const [complexity, setComplexity] = useState("O(1)"); // Default selection
 
   const timeComplexities = [
     "O(1)",
     "O(log n)",
     "O(n)",
+    "O(n+m)",
     "O(n log n)",
     "O(n^2)",
     "O(n^3)",
